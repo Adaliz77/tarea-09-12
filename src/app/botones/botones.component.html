@@ -1,0 +1,11 @@
+<p>Listado de ciudades</p>
+
+<ul>
+  <li *ngFor="let ciudad of ciudades; let i = index">
+    {{i+1}} - {{ciudad}}
+  </li>
+</ul>
+
+<button (click)="mostrarCiudades()">Muestra las ciudades</button>
+<button (click)="borrarListCiudades()">Borra mi listado de ciudades</button>
+<p>Ciudades borradas: {{listaBorrada}}</p>
